@@ -1,0 +1,335 @@
+@import url("/common.css");
+
+.title {
+  margin-top: 140px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  background: #fcecd3;
+  position: relative;
+  z-index: 2;
+  .text {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    h1 {
+      font-size: 30px;
+    }
+  }
+}
+
+.inners {
+  width: 100%;
+  height: calc(100vh - 100px - 140px);
+  /* overflow: hidden; */
+  .map_wrap,
+  .map_wrap * {
+    font-family: "Malgun Gothic", dotum, "돋움", sans-serif;
+    font-size: 15px;
+  }
+  #menu_wrap .option button {
+    margin-left: 5px;
+  }
+  .map_wrap a,
+  .map_wrap a:hover,
+  .map_wrap a:active {
+    color: #9bce26;
+    text-decoration: none;
+  }
+  .map_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  #menu_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100%;
+    padding: 10px 0;
+    /* overflow-y: auto; */
+    z-index: 1;
+    font-size: 12px;
+    box-shadow: 10px 1px 14px rgba(0, 0, 0, 0.35);
+    /* border-right: 1px solid #aaa; */
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .bg_white {
+    background: #fff;
+  }
+  #menu_wrap hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--text-color-gray);
+    margin: 20px 0;
+  }
+  .input_box {
+    position: relative;
+    i {
+      position: absolute;
+      right: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 18px;
+      color: #888;
+      transition: all 0.3s;
+      &:hover {
+        color: #9bce26;
+      }
+    }
+    .fa-magnifying-glass:before,
+    .fa-search:before {
+      font-family: "FontAwesome";
+    }
+  }
+  input {
+    width: 90%;
+    height: 45px;
+    border-radius: 30px;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid #a5a5a5;
+    color: #999;
+    font-size: 18px;
+  }
+  /* button[type="submit"] {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border: none;
+
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:hover {
+      background: #9bce26;
+      color: #fff;
+    }
+  } */
+  #menu_wrap .option {
+    background-color: #fff;
+    text-align: center;
+    position: fixed;
+    /* height: 99px; */
+    width: inherit;
+    z-index: 10;
+    top: 240px;
+    padding: 10px 0 20px;
+    border-bottom: 1px solid var(--text-color-gray);
+  }
+  #menu_wrap .option p {
+    margin: 10px 0;
+  }
+  #placesList {
+    background: #fff;
+    margin-top: 100px;
+  }
+  #placesList li {
+    list-style: none;
+  }
+  #placesList .item {
+    position: relative;
+    border-bottom: 1px solid #888;
+    overflow: hidden;
+    cursor: pointer;
+    min-height: 65px;
+  }
+  #placesList .item span {
+    display: block;
+    margin-top: 4px;
+  }
+  #placesList .item h5,
+  #placesList .item .info {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  #placesList .item .info {
+    padding: 10px 0 10px 55px;
+  }
+  #placesList .info .gray {
+    color: #8a8a8a;
+  }
+  #placesList .info .jibun {
+    padding-left: 26px;
+    background: url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png)
+      no-repeat;
+  }
+  #placesList .info .tel {
+    color: #009900;
+  }
+  #placesList .item .markerbg {
+    float: left;
+    position: absolute;
+    width: 36px;
+    height: 37px;
+    margin: 10px 0 0 10px;
+    background: url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png)
+      no-repeat;
+  }
+  #placesList .item .marker_1 {
+    background-position: 0 -10px;
+  }
+  #placesList .item .marker_2 {
+    background-position: 0 -56px;
+  }
+  #placesList .item .marker_3 {
+    background-position: 0 -102px;
+  }
+  #placesList .item .marker_4 {
+    background-position: 0 -148px;
+  }
+  #placesList .item .marker_5 {
+    background-position: 0 -194px;
+  }
+  #placesList .item .marker_6 {
+    background-position: 0 -240px;
+  }
+  #placesList .item .marker_7 {
+    background-position: 0 -286px;
+  }
+  #placesList .item .marker_8 {
+    background-position: 0 -332px;
+  }
+  #placesList .item .marker_9 {
+    background-position: 0 -378px;
+  }
+  #placesList .item .marker_10 {
+    background-position: 0 -423px;
+  }
+  #placesList .item .marker_11 {
+    background-position: 0 -470px;
+  }
+  #placesList .item .marker_12 {
+    background-position: 0 -516px;
+  }
+  #placesList .item .marker_13 {
+    background-position: 0 -562px;
+  }
+  #placesList .item .marker_14 {
+    background-position: 0 -608px;
+  }
+  #placesList .item .marker_15 {
+    background-position: 0 -654px;
+  }
+  /* .nav {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      li {
+        a {
+          font-size: 15px;
+          color: #999;
+          &:hover {
+            color: #9bce26;
+          }
+        }
+      }
+    }
+  }
+  #pagination {
+    margin: 10px auto;
+    text-align: center;
+  }
+  #pagination a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  #pagination .on {
+    font-weight: bold;
+    cursor: default;
+    color: #777;
+  } */
+  .nav {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      li {
+        a {
+          font-size: 15px;
+          color: #999;
+          font-weight: bold;
+          &:hover {
+            color: #9bce26;
+          }
+          &.active {
+            color: var(--main-btn-green);
+          }
+        }
+      }
+    }
+  }
+  #pagination {
+    margin: 10px auto;
+    text-align: center;
+  }
+  #pagination a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  #pagination .on {
+    font-weight: bold;
+    cursor: default;
+    color: #777;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .title {
+    margin-top: 50px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    .text {
+      width: 100%;
+      h1 {
+        font-size: 24px;
+      }
+    }
+  }
+  .inners {
+    position: absolute;
+    height: calc(100vh - 127px);
+    bottom: 0;
+    #menu_wrap {
+      width: 100%;
+      height: 100%;
+    }
+    #menu_wrap .option {
+      top: 129px;
+    }
+  }
+}

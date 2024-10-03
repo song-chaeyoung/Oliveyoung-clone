@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="/indeximg/logo_s.svg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:title" content="올리브영 온라인몰" />
+    <meta
+      property="og:description"
+      content="어디가? 올리브영! 뭐해? 올리브영! 전국매장과 온라인앱으로 가고 켜고, 주문하면 3시간 내 배송되는 오늘드림까지. 언제 어디서나 편리한 뷰티&헬스, 라이프스타일 쇼핑을 즐기는 곳, 올리브영"
+    />
+    <title>회원가입 | 올리브영</title>
+    <link
+      rel="shortcut icon"
+      href="/indeximg/logo_s.svg"
+      type="image/x-icon"
+    />
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/dc916c7b69.js" crossorigin="anonymous"></script>
+    <!--custom css & JS-->
+    <link rel="stylesheet" href="./signup.css" />
+    <script defer src="./signup.js"></script>
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  </head>
+  <body>
+    <!--header-->
+    <header></header>
+    <main>
+    <div class="inner">
+          <div class="wrapper">
+            <h3>
+              회원가입
+            </h3>
+            <h4><span>*</span>필수입력사항</h4>
+    
+            <!--아이디-->
+        <div class="user_id">
+              <label for="userId">아이디 <span>*</span></label>
+              <input
+                id="signId"
+                class="inputbox"
+                type="text"
+                name="signId"
+                placeholder="아이디를 입력해주세요."/>
+              <div id="error_id" class="error"></div>
+              <div class="check_wrapper">
+                <button id="check_button">중복확인</button>
+              </div>
+          </div> 
+            <!--비밀번호-->
+          <div class="user_pw">
+            <div class="pw01">
+                <label for="password1">비밀번호 <span>*</span></label>
+                <input
+                  id="password1"
+                  class="inputbox"
+                  type="password"
+                  name="password1"
+                  placeholder="비밀번호를 입력해주세요"/>
+                <div id="error_password1" class="error"></div>
+            </div>
+            <div class="pw02">
+                <label for="password2">비밀번호 확인 <span>*</span></label>
+                <input
+                  id="password2"
+                  class="inputbox"
+                  type="password"
+                  name="password2"
+                  placeholder="비밀번호를 한번 더 입력해주세요."/>
+                <div id="error_password2" class="error"></div>
+            </div>
+          </div>
+            <!--이름-->
+          <div class="user_name">
+              <label for="name">이름 <span>*</span></label>
+              <input
+                id="name"
+                class="inputbox"
+                type="text"
+                name="name"
+                placeholder="이름을 입력해주세요."/>
+                <div id="error_writer" class="error"></div>
+          </div>
+            <!--이메일-->
+          <div class="user_email">
+                <label for="email">이메일 <span>*</span></label>
+                <input
+                  id="email"
+                  class="inputbox"
+                  type="text"
+                  name="email"
+                  placeholder="이메일을 입력해주세요."/>
+                <div id="error_email" class="error"></div>
+                <div class="check_wrapper">
+                  <button id="check_email_button">중복확인</button>
+                </div>
+          </div>
+            <!--휴대폰-->
+          <div class="user_phone">
+                <label for="phoneNum">휴대폰 <span>*</span></label>
+                <input
+                  id="phoneNum"
+                  class="inputbox"
+                  type="phonenumber"
+                  name="phoneNum"
+                  placeholder="휴대폰 번호를 입력해주세요"/>
+                <div id="error_phoneNum" class="error"></div>
+              <div class="token_wrapper">
+                <button id="token_button">인증번호 받기</button>
+              </div>
+          </div>
+            <!--주소검색-->
+          <div class="user_address">
+                <label for="address">주소 <span>*</span></label>
+                <div class="address_wrapper">
+                  <button id="address_button">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>주소검색</button>
+                    <input type="text" id="address_input" class="inputbox" placeholder="주소를 입력해주세요." readonly />
+                    <input type="text" id="address_detail" class="inputbox" placeholder="상세주소를 입력해주세요." />
+                </div>
+          </div>
+          <br>
+            <!--이용약관동의-->
+          <div class="useCheck_wrapper">
+              <label class="useCheck">이용약관 동의 <span>*</span></label>
+            
+    <div class="user_checkbox">
+              <div class="useCheck_section">
+                <input type="checkbox" id="agreeAll" class="checkbox">
+                <label class="agreeAll" for="agreeAll">전체 동의합니다.</label>
+              </div>
+            <div class="useCheck_section">
+              <input type="checkbox" id="agreeRequired1" class="checkbox required">
+              <label class="agreeCheck" for="agreeRequired1">이용약관 동의 (필수)</label>
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="useCheck_section">
+              <input type="checkbox" id="agreeRequired2" class="checkbox required">
+              <label class="agreeCheck" for="agreeRequired2">개인정보 수집 및 이용동의 (필수)</label>
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="useCheck_section">
+              <input type="checkbox" id="agreeOptional1" class="checkbox optional">
+              <label class="agree" for="agreeOptional1">마케팅 정보수신 및 활용에 동의 (선택)</label>
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="useCheck_section">
+              <input type="checkbox" id="agree" class="checkbox optional">
+              <label class="snsBox" for="snsBox">SNS</label>
+              <input type="checkbox" id="agreeAll" class="checkbox optional">
+              <label class="emailBox" for="emailBox">이메일</label>
+            </div>
+            <div class="useCheck_section">
+              <input type="checkbox" id="agreeRequired3" class="checkbox required">
+              <label class="agreeCheck" for="agreeRequired3">만 14세 이상입니다. (필수)</label>
+            </div>
+          </div>
+          </div>
+          <!--가입하기버튼-->
+            <div class="user_signup">
+              <button id="signup_button">
+                <a href="joinFinish.html">가입하기</button>
+                </a>
+            </div>
+            <!--Modal-->
+            <div id="infoModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span> 
+                <p>
+                  <b>제 1 장 총칙</b>
+                  <br>
+                  <br>
+                  <hr>
+                  <br>
+                  제 1조 (목적)<br>
+                  <br>
+                  본 약관은 씨제이올리브영 주식회사(이하 ‘회사’)가 운영하는 홈페이지(이하 ‘홈페이지’, www.oliveyoung.co.kr) 및 매장에서 제공하는 관련 서비스(모바일 및 인터넷 관련 서비스, 이하 ‘서비스’)를 이용함에 있어 회사와 회사의 서비스를 이용하는 자간의 권리, 의무 및 책임, 기타 필요한 사항을 규정함에 목적이 있습니다.
+                  <br>
+                  <br>
+                  제 2조 (정의)
+                  <br>
+                  <br>
+                  ① 본 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+                  1. '홈페이지'란 컴퓨터, TV 및 휴대폰 등 정보통신 설비를 이용하여 상품 또는 용역(이하 '상품 등')을 이용자에게 제공하기 위하여 설정한 가상의 영업장을 말하며 PC/Web/App 등의 형태로 제공됩니다. 아울러 사이버몰을 운영하는 사업자의 의미로도 사용합니다.
+                  2. ‘매장’이란 회사가 상품 등을 이용자에게 제공하기 위해 운영하는 물리적 공간 또는 관련된 오프라인 영업장을 말합니다.
+                  3. '이용자'란 홈페이지에 접속하거나 매장에 방문하여 본 약관에 따라 회사가 제공하는 서비스를 받는 자로 회원과 비회원을 포함합니다.
+                  4. ‘올리브영 회원’(이하 ‘회원’)이란 씨제이올리브네트웍스 주식회사가 운영하는 CJ ONE 회원 중 CJ ONE 통합 회원 서비스(www.cjone.com)를 통하여 본 약관에 동의하고 회사의 회원으로 가입한 자를 의미합니다.
+                  5. ‘비회원’이란 회사의 ‘회원’자격을 득하지 않고 회사의 서비스를 이용하는 자를 말합니다. 이때 회사는 비회원에게는 홈페이지 또는 매장의 이용을 제한하거나 일부 서비스를 제공하지 않을 수 있으며, 비회원은 이에 대하여 이의를 제기할 수 없습니다.
+                  6. ‘서비스’란 회사가 운영하는 홈페이지 및 매장 등에서 제공하는 관련 서비스(매장 운영, 모바일 및 인터넷 관련서비스)를 말합니다.
+                  7. ‘스마트 영수증’이란 회사가 운영하는 매장에서 물품•재화 및 서비스 등을 구입한 이후 제공받는 지류 영수증, 쿠폰 등을 회사가 관리하는 어플리케이션(APP)을 통해 제공하는 서비스 또는 해당 모바일 영수증 자체를 말합니다.
+                  8. ‘통신판매중개서비스’란 회사가 제공하는 통신판매중개서비스 및 이에 수반되는 부가서비스 일체를 말합니다.
+                  9. ‘판매자’란 회사가 제공하는 통신판매중개서비스를 통하여 실제로 상품 등을 판매하는 자로서 회사와 별도 통신판매중개서비스 이용 계약을 체결한 자를 말합니다.
+                  ② 기타 용어의 정의는 제1항에서 정한 것을 제외하고는 거래 관행 및 관계 법령을 따릅니다.
+                  제 3조 (약관의 명시와 개정)
+                  ① 회사는 본 약관의 내용과 상호 및 대표자의 성명, 소재지 주소(소비자의 불만을 처리할 수 있는 곳의 주소를 포함), 사업자등록번호, 연락처(전화번호, 전자우편주소 등), 통신판매업신고번호, 개인정보관리책임자 등을 이용자가 알 수 있도록 홈페이지의 초기 서비스화면(전면)에 게시합니다. 다만, 약관의 내용은 이용자가 연결 화면을 통하여 볼 수 있도록 할 수 있습니다.
+                  ② 회사는 "약관의 규제에 관한 법률", "전자문서 및 전자거래기본법", "전자서명법", "정보통신망 이용촉진 및 정보보호 등에 관한 법률(이하 '정보통신망법')", "방문판매 등에 관한 법률", "소비자기본법" 등 관련 법령을 위반하지 않는 범위에서 본 약관을 개정할 수 있습니다.
+                  ③ 회사가 약관을 개정할 경우에는 적용 일자 및 개정사유를 명시하여 현행 약관과 함께 본 홈페이지 초기화면에 그 적용일자 1주일 이전부터 적용일자 전일까지 공지하거나, 회원이 등록한 전자우편(e-mail) 등을 이용하여 통지합니다. 다만, 회원에게 불리하게 약관 내용을 변경하는 경우에는 최소한 30일 이상의 사전 유예기간을 두고 공지 또는 통지합니다. 이 경우 회사는 개정 내용을 회원이 알기 쉽도록 표시합니다.
+                  ④ 개정약관은 그 적용일자 이후에 체결되는 계약에만 적용되고 그 이전에 이미 체결된 계약에 대해서는 개정 전의 약관 조항이 그대로 적용됩니다. 다만, 이미 계약을 체결한 이용자가 개정약관 조항의 적용을 받기를 원하는 뜻을 제 3항에 의한 개정약관의 공지기간 내에 회사에 제출한 후 회사의 동의를 받은 경우에는 개정약관 조항이 적용됩니다.
+                  ⑤ 회원은 개정약관을 공지 또는 통지 받은 후 30일 내에 개정약관에 대해 명시적으로 거부의사를 표시하지 아니한 경우 회원 개정약관에 동의한 것으로 봅니다. 또한 회원 본인이 개정약관의 적용에 동의하지 않는 경우 CJ ONE 통합 회원 탈퇴 또는 올리브영 약관 철회 요청을 할 수 있습니다.
+                  제 4조 (약관 외 준칙)
+                  ① 본 약관에서 정하지 아니한 사항과 본 약관의 해석에 관하여는 "전자상거래 등에서의 소비자보호에 관한 법률(이하 '전자상거래법')", 약관의 규제 등에 관한 법률, 공정거래위원회가 정하는 전자상거래 등에서의 소비자 보호지침 및 관계법령 또는 상관례에 따릅니다.
+                  ② 회사는 필요한 경우 특정 서비스에 관하여 적용될 사항(이하 ‘개별 약관’)을 정하여 이를 홈페이지 등을 통해 미리 공지할 수 있습니다.
+                  ③ 회원은 항상 본 약관 및 개별 약관의 내용에 변경이 있는지 여부를 주시하여야 하며, 변경사항의 공지가 있을 시에는 이를 확인하여야 합니다.
+                  제 5조 (적용범위 및 우선순위)
+                  ① 본 약관 내용은 회사가 제공하는 전체 서비스(통신판매중개서비스 포함)에 적용되며, 제4장(통신판매중개)은 회사가 제공하는 서비스 중 통신판매중개서비스에 국한하여 적용됩니다.
+                  ② 통신판매중개서비스와 관련하여 본 약관의 제4장(통신판매중개)의 규정과 다른 규정이 상충되는 경우 통신판매중개서비스에 관한 규정인 제4장이 우선적인 효력을 갖습니다.
+                  제 2 장 제공 서비스 및 회원 관리</p>
+                  <br>
+                  <hr>
+                <button id="confirmButton">확인</button>
+              </div>
+            </div>
+</div>
+</div>
+    </main>
+    <div class="sidebar_common"></div>
+    <footer></footer>
+  </body>
+</html>

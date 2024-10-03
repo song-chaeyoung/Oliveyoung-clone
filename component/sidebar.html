@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar</title>
+    <!-- fontawsome -->
+    <script
+      src="https://kit.fontawesome.com/580465cdf5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/component/sidebar.css" />
+    <script defer src="/component/sidebar.js"></script>
+  </head>
+  <body>
+    <div class="sidebar only_pc">
+      <div class="sidebar_items">
+        <div class="sidebar_item">
+          <a href="/cart/cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p class="cart_num">0</p>
+          </a>
+        </div>
+        <div class="sidebar_item sidebar_icon_cart">
+          <i class="fa-regular fa-clock"></i>
+          <p>0</p>
+        </div>
+        <div id="sidebar_xmark" class="sidebar_item">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="sidebar_item">
+          <a href="#">
+            <i class="fa-solid fa-chevron-up"></i>
+          </a>
+        </div>
+      </div>
+      <div class="sidebar_cart">
+        <div class="sidebar_cart_box">
+          <div class="sidebar_cart_box_header">
+            <p>최근 본 상품</p>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="sidebar_cart_box_main side_bar_cart_empty">
+            <p>최근 본 상품이 없습니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile_btmbar only_mobile">
+      <div class="mobile_top">
+        <a href="#">
+          <i class="fa-solid fa-chevron-up"></i>
+        </a>
+      </div>
+      <div class="mobile_btmbar_containier">
+        <div class="inner">
+          <div class="mobile_btmbar_itmes">
+            <ul>
+              <li>
+                <a href="/api/api.html">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>매장안내</p>
+                </a>
+              </li>
+              <li>
+                <a href="/login/login.html">
+                  <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                  <p>로그인</p>
+                </a>
+              </li>
+              <li>
+                <a href="/index.html">
+                  <div class="logo_s"></div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <i class="fa-solid fa-user"></i>
+                  <p>마이페이지</p>
+                </a>
+              </li>
+              <li>
+                <a href="/cart/cart.html">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <p>장바구니</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

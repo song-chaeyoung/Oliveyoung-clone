@@ -1,0 +1,130 @@
+/* import */
+/* notosans kr */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: normal 1rem/1.4 "Noto Sans KR", sans-serif;
+  /* font-family: "Noto Sans KR", sans-serif; */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  background: inherit;
+  border: none;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input[type="text"] {
+  &::placeholder {
+    opacity: 1;
+    transition: all 0.5s;
+  }
+  &:focus::placeholder {
+    opacity: 0;
+  }
+}
+
+:focus {
+  outline: none;
+}
+
+/* color */
+:root {
+  /* color */
+  --main-green: #82dc28;
+  --main-coral: #ff7878;
+  --main-btn-green: #9ac75b;
+  --main-black: #231815;
+  --main-price-red: #e02020;
+  --text-color-gray: #666666;
+  --white: #fff;
+  --line-gray: #efefef;
+
+  /* size */
+  --font-16px: 16px;
+  --font-18px: 18px;
+  --font-title-26px: 26px;
+}
+
+.inner {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+main {
+  margin-top: 140px;
+}
+
+.only_pc {
+  display: block;
+}
+
+.only_mobile {
+  display: none;
+}
+
+/* icon */
+.logo {
+  display: block;
+  width: 200px;
+  height: 32px;
+  background: url("./indeximg/logo.png") center/cover no-repeat;
+}
+
+.logo_s {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("./indeximg/logo_s_2.png") center/cover no-repeat;
+}
+
+/* Mobile */
+@media screen and (max-width: 1080px) {
+  .inner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  main {
+    margin-top: 50px;
+  }
+  .only_pc {
+    display: none !important;
+  }
+  .only_mobile {
+    display: block;
+  }
+}

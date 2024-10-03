@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <!-- fontawsome -->
+    <script
+      src="https://kit.fontawesome.com/580465cdf5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/component/header.css" />
+    <script defer src="/component/header.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="inner">
+        <div class="header_left">
+          <a href="/index.html">
+            <div class="logo"></div>
+          </a>
+          <a href="/index.html">
+            <div class="logo_s"></div>
+          </a>
+          <div class="header_left_category">
+            <i class="fa-solid fa-bars"></i>
+            <span>카테고리</span>
+          </div>
+        </div>
+        <div class="header_center">
+          <div class="header_center_search">
+            <form class="header_search_form" action="">
+              <input
+                type="text"
+                name="header_search"
+                id="header_search"
+                placeholder="상품, 브랜드, 성분 검색"
+              />
+              <div class="header_center_search_forcebox">
+                <div class="search_lastest">
+                  <h4>최근 검색어</h4>
+                  <div
+                    class="search_lastest_word_container search_word_container"
+                  ></div>
+                  <div class="search_lastest_setting search_setting">
+                    <p>전체 삭제</p>
+                    <!-- <p>검색어 저장 끄기</p> -->
+                  </div>
+                </div>
+                <div class="divider"></div>
+                <div class="search_ranking">
+                  <h4>급상승 검색어</h4>
+                  <div
+                    class="search_ranking_word_container search_word_container"
+                  ></div>
+                  <div class="search_ranking_setting search_setting">
+                    <p><span></span> 기준</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <i class="fa-solid fa-magnifying-glass search_icon"></i>
+          </div>
+          <div class="header_cneter_list">
+            <ul>
+              <li>
+                <a href="javascript:void(0)">오특</a>
+              </li>
+              <li>
+                <a href="/product/product.html">랭킹</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">헬스+</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">LUXE EDIT</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">기획전</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">이벤트</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">세일</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_right">
+          <div class="header_right_icons">
+            <ul>
+              <li>
+                <a href="/api/api.html">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div class="header_top_icon_info">매장안내</div>
+                </a>
+              </li>
+              <li>
+                <a href="/login/login.html">
+                  <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                  <div class="header_top_icon_info">로그인</div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <i class="fa-solid fa-user"></i>
+                  <div class="header_top_icon_info">마이페이지</div>
+                </a>
+              </li>
+              <li>
+                <a href="/cart/cart.html">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <div class="header_top_icon_info">장바구니</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="haeder_category_container">
+        <div class="inner">
+          <div class="haader_category">
+            <div class="haader_category_xmark">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="haader_category_top">
+              <div class="haader_category_title">뷰티</div>
+              <div class="haader_category_list">
+                <dl>
+                  <dt>
+                    <a href="javascript:void(0)">스킨케어</a>
+                  </dt>
+                  <dd>
+                    <a href="javascript:void(0)">스킨/토너</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">에센스/세럼/앰플</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">크림</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">로션</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">미스트/오일</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">스킨케어세트</a>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <a href="javascript:void(0)">메이크업</a>
+                  </dt>
+                  <dd>
+                    <a href="javascript:void(0)">립메이크업</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">베이스메이크업</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">아이메이크업</a>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <a href="javascript:void(0)">헤어케어</a>
+                  </dt>
+                  <dd>
+                    <a href="javascript:void(0)">샴푸/린스</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">트리트먼트/팩</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">헤어에센스</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">염색약/펌</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">헤어기기/브러시</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">스타일링</a>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <a href="javascript:void(0)">마스크팩</a>
+                  </dt>
+                  <dd>
+                    <a href="javascript:void(0)">시트팩</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">패드</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">페이셜팩</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">코팩</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">패치</a>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <a href="javascript:void(0)">미용소품</a>
+                  </dt>
+                  <dd>
+                    <a href="javascript:void(0)">메이크업소품</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">스킨케어소품</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">아이소품</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">헤어/바디소품</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">미용가전</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">미용관리</a>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <a href="javascript:void(0)">바디케어</a>
+                  </dt>
+                  <dd>
+                    <a href="javascript:void(0)">샤워/입욕</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">로션/오일</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">바디미스트</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">제모/왁싱</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">데오드란트</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">립케어</a>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <a href="javascript:void(0)">클렌징</a>
+                  </dt>
+                  <dd>
+                    <a href="javascript:void(0)">클렌징폼/젤</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">오일/밤</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">워터/티슈/밀크</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">필링/스크럽</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">림&아이리무버</a>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <a href="javascript:void(0)">더모코스메틱</a>
+                  </dt>
+                  <dd>
+                    <a href="javascript:void(0)">스킨케어</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">바디케어</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">클렌징</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">선케어</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">마스크팩</a>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <a href="javascript:void(0)">맨즈케어</a>
+                  </dt>
+                  <dd>
+                    <a href="javascript:void(0)">스킨케어</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">메이크업</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">쉐이빙</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">바디케어</a>
+                  </dd>
+                  <dd>
+                    <a href="javascript:void(0)">프래그런스/라이프</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="haader_category_btm">
+              <div class="haader_category_btm_left">
+                <div class="haader_category_title">헬스&푸드</div>
+                <div class="haader_category_list">
+                  <dl>
+                    <dt>
+                      <a href="javascript:void(0)">건강식품</a>
+                    </dt>
+                    <dd>
+                      <a href="javascript:void(0)">비타민</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">유산균</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">영양제</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">슬리밍/이너뷰티</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">키즈</a>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>
+                      <a href="javascript:void(0)">푸드</a>
+                    </dt>
+                    <dd>
+                      <a href="javascript:void(0)">이너뷰티/식단관리</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">생수/음료/커피</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">과자/간식</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">간편식/요리</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">베이비푸드</a>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>
+                      <a href="javascript:void(0)">구강용품</a>
+                    </dt>
+                    <dd>
+                      <a href="javascript:void(0)">칫솔</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">치약</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">애프터구강케어</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">휴대용세트</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">구강가전</a>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>
+                      <a href="javascript:void(0)">헬스/건강용품</a>
+                    </dt>
+                    <dd>
+                      <a href="javascript:void(0)">패치/겔</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">눈 관리 용품</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">생활/의료</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">마사지/헬스용품</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">풋케어</a>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>
+                      <a href="javascript:void(0)">여성/위생용품</a>
+                    </dt>
+                    <dd>
+                      <a href="javascript:void(0)">생리/위생용품</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">Y존케어</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">성인용품</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">마사지젤/오일</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">테스트기</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">성인용 기저귀</a>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="haader_category_btm_right">
+                <div class="haader_category_title">라이프</div>
+                <div class="haader_category_list">
+                  <dl>
+                    <dt>
+                      <a href="javascript:void(0)">컴포트웨어</a>
+                    </dt>
+                    <dd>
+                      <a href="javascript:void(0)">우먼웨어</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">맨즈웨어</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">홈웨어</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">양말/스타킹</a>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>
+                      <a href="javascript:void(0)">리빙/펫</a>
+                    </dt>
+                    <dd>
+                      <a href="javascript:void(0)">방향/탈취</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">가전</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">생활/주방</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">인테리어</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">베이비</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">제지류</a>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>
+                      <a href="javascript:void(0)">취미/팬시</a>
+                    </dt>
+                    <dd>
+                      <a href="javascript:void(0)">디자인문구</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">디지털/사무</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">취미용품</a>
+                    </dd>
+                    <dd>
+                      <a href="javascript:void(0)">악세서리</a>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

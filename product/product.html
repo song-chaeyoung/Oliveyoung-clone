@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="/indeximg/logo_s.svg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:title" content="올리브영 온라인몰" />
+    <meta
+      property="og:description"
+      content="어디가? 올리브영! 뭐해? 올리브영! 전국매장과 온라인앱으로 가고 켜고, 주문하면 3시간 내 배송되는 오늘드림까지. 언제 어디서나 편리한 뷰티&헬스, 라이프스타일 쇼핑을 즐기는 곳, 올리브영"
+    />
+    <link rel="shortcut icon" href="/indeximg/logo_s.svg" type="image/x-icon" />
+    <title>랭킹 | 올리브영</title>
+    <!-- fontawsome -->
+    <script
+      src="https://kit.fontawesome.com/580465cdf5.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom -->
+    <link rel="stylesheet" href="./product.css" />
+    <script defer src="./product.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <div class="sidebar_common"></div>
+    <main>
+      <div class="wrapper inner">
+        <section class="category">
+          <!-- <h4>카테고리</h4> -->
+          <div class="category_list">
+            <p data-info="all" class="active">전체</p>
+            <p data-info="skincare">스킨케어</p>
+            <p data-info="makeup">메이크업</p>
+            <p data-info="cleansing">클렌징</p>
+            <p data-info="maskpack">마스크팩</p>
+            <p data-info="food">헬스&푸드</p>
+          </div>
+        </section>
+        <section class="ranking_container">
+          <div class="ranking_header">
+            <h2>랭킹</h2>
+            <div class="select_container">
+              <select name="ranking" id="ranking">
+                <option selected value="popular">추천순</option>
+                <option value="low">낮은 가격순</option>
+                <option value="high">높은 가격순</option>
+                <option value="review">리뷰순</option>
+                <option value="star">별점순</option>
+              </select>
+              <!-- <div class="divider"></div>
+              <span class="detailsearch"
+                >상세검색 <i class="fa-solid fa-sliders"></i
+              ></span> -->
+            </div>
+          </div>
+          <div class="ranking">
+            <div class="ranking_items"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

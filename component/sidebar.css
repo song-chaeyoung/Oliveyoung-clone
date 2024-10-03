@@ -1,0 +1,193 @@
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  z-index: 10;
+  bottom: 8%;
+  right: 0px;
+  transition: all 0.5s;
+  .sidebar_items {
+    position: relative;
+    .sidebar_item {
+      width: 54px;
+      height: 54px;
+      background: var(--main-btn-green);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid var(--white);
+      color: var(--white);
+      cursor: pointer;
+      &:nth-child(1) {
+        border-top: none;
+      }
+      &:nth-of-type(1),
+      &:nth-of-type(2) {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 0.5s;
+        i {
+          font-size: 20px;
+        }
+      }
+      &:nth-child(3) {
+        position: relative;
+        i {
+          transition: all 0.5s;
+        }
+      }
+      &:nth-child(4) {
+        position: relative;
+        i {
+          transition: all 0.5s;
+        }
+        &:hover i {
+          transform: translateY(-4px);
+        }
+      }
+      a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      i {
+        font-size: 24px;
+      }
+      a > p,
+      p {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 2px;
+      }
+    }
+  }
+  .sidebar_cart {
+    width: 150px;
+    height: 480px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: -150px;
+    background: rgba(232, 232, 232, 0.5);
+    .sidebar_cart_box_header {
+      background: var(--main-btn-green);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 40px;
+      padding: 2px 10px 0;
+      color: var(--white);
+      p {
+        font: 500 18px /40px "Noto Sans";
+      }
+      i {
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+    .sidebar_cart_box_main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 440px;
+      /* height: 100%; */
+      text-align: center;
+      padding: 0 20px;
+    }
+  }
+  &.cart {
+    right: 150px;
+  }
+  &.short {
+    .sidebar_items {
+      position: relative;
+      .sidebar_item:nth-of-type(1),
+      .sidebar_item:nth-of-type(2) {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      .sidebar_item:nth-of-type(3) {
+        i {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 1080px) {
+  /* Mobile Btm Bar */
+  .mobile_btmbar {
+    z-index: 9;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    .mobile_top {
+      /* display: none; */
+      position: fixed;
+      bottom: 80px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      border: 3px solid var(--main-btn-green);
+      border-radius: 50%;
+      background: #fff;
+      text-align: center;
+      opacity: 0;
+      transition: all 0.5s;
+      i {
+        color: var(--main-btn-green);
+        font-size: 18px;
+        line-height: 38px;
+      }
+      &.active {
+        opacity: 1;
+      }
+    }
+    .mobile_btmbar_containier {
+      width: 100%;
+      height: 100%;
+      background: var(--white);
+      box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.25);
+      position: relative;
+      .mobile_btmbar_itmes {
+        width: 100%;
+        ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          gap: 30px;
+          align-items: center;
+          padding: 10px 0;
+          li {
+            width: 48px;
+            text-align: center;
+            a {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: 6px;
+              i {
+                font-size: 20px;
+                width: 20px;
+                height: 20px;
+              }
+              p {
+                font: normal 10px/1.4 "Noto Sans";
+                letter-spacing: -1.5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

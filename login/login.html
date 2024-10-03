@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="/indeximg/logo_s.svg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:title" content="올리브영 온라인몰" />
+    <meta
+      property="og:description"
+      content="어디가? 올리브영! 뭐해? 올리브영! 전국매장과 온라인앱으로 가고 켜고, 주문하면 3시간 내 배송되는 오늘드림까지. 언제 어디서나 편리한 뷰티&헬스, 라이프스타일 쇼핑을 즐기는 곳, 올리브영"
+    />
+    <title>로그인 | 올리브영</title>
+    <link
+      rel="shortcut icon"
+      href="/indeximg/logo_s.svg"
+      type="image/x-icon"
+    />
+    <!-- fontawsome -->
+    <script
+    src="https://kit.fontawesome.com/580465cdf5.js"crossorigin="anonymous"></script>
+    <!--custom css & js-->
+    <script defer src="./login.js"></script>
+    <link rel="stylesheet" href="./login.css">
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="inner">
+        <div class="loginText">
+          <h2>로그인</h2>
+          <span>올리브영의 다양한 서비스와 혜택을 누리세요.</span>
+        </div>
+        <!--tab 부분-->
+        <ul class="tabs">
+          <li class="tab1 active">
+            <div for="tab-1">회원</div>
+          </li>
+          <li class="tab2">
+            <div for="tab-2">비회원 주문조회</div>
+          </li>
+        </ul>
+        <!--ID & PW 입력부분-->
+        <div class="contents">
+          <div class="content1 active">
+        <div class="userMember">
+              <div class="memberId">
+                <input id="inputId" placeholder="CJ ONE 통합회원 아이디 입력" type="text"></input>
+            </div>
+            <div class="memberPw">
+                <input id="inputPw" placeholder="비밀번호(8-12자 영문자+숫자+특수문자)" type="password"></input>
+            </div>
+        </div>
+        <div class="idFind">
+          <div class="idCheckbox">
+              <div class= "idCheck">
+                  <input 
+                  type="checkbox"
+                  name="checked"
+                  id="idCheck"
+                  class="idText"><p>아이디 저장</p>
+              </div>
+              </div>
+              <div class="find">
+                  <span>
+                    <a href="loginFind.html">아이디 찾기</span></a>
+                  <span>|</span>
+                  <span>
+                    <a href="loginPwFind.html">비밀번호 찾기</span></a> 
+          </div>
+      </div>
+              <!--button 부분-->
+              <div class="loginBtn">
+                <div class="loginBtn01">
+                    <button>로그인</button>
+                </div>
+            <div class="signBtn">
+                    <div class="cjoneBtn">
+                        <button>
+                          <a href="signup.html">
+                          <img src="./img/cj.svg" alt="cj">CJ ONE 통합가입</button>
+                          </a>
+                    </div>
+                    <div class="kakaoBtn">
+                        <button>
+                          <img src="./img/kakao.svg" alt="kakao">카카오로 시작하기</button>
+                    </div>
+            </div>
+            </div>
+          </div>
+          <!--비회원 주문조회-->
+          <div class="content2">
+            <div class="orderMember">
+              <div class="memberId">
+                <input 
+                id="inputId" 
+                placeholder="주문자명 입력" 
+                type="text">
+              </input>
+            </div>
+            <div class="memberPw">
+                <input 
+                id="inputPw" 
+                placeholder="주문번호" 
+                type="password">
+              </input>
+            </div>
+            </div>
+            <div class="nomemberBtn">
+              <div class="orderbtn">
+                  <button>
+                    비회원 주문조회
+                  </button>
+              </div>
+              <div class="joinbtn">
+                  <a href="signup.html">회원가입 하러가기</a>
+              </div>
+            </div>              
+          </div>
+        </div>
+      </div>
+    </main>   
+    <div class="sidebar_common"></div>
+    <footer></footer>
+  </body>
+</html>

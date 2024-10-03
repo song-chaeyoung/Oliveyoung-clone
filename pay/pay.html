@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script
+      src="https://kit.fontawesome.com/580465cdf5.js"
+      crossorigin="anonymosus"
+    ></script>
+    <link rel="stylesheet" href="./pay.css" />
+    <script defer src="./pay.js"></script>
+    <meta property="og:image" content="/indeximg/logo_s.svg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:title" content="올리브영 온라인몰" />
+    <meta
+      property="og:description"
+      content="어디가? 올리브영! 뭐해? 올리브영! 전국매장과 온라인앱으로 가고 켜고, 주문하면 3시간 내 배송되는 오늘드림까지. 언제 어디서나 편리한 뷰티&헬스, 라이프스타일 쇼핑을 즐기는 곳, 올리브영"
+    />
+    <title>결제 | 올리브영</title>
+    <link rel="shortcut icon" href="/indeximg/logo_s.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- header -->
+    <header></header>
+    <main>
+      <!-- titl -->
+      <div class="top_title">
+        <div class="inner">
+          <div class="cart_container">
+            <div class="cart_text"><h1>결제하기</h1></div>
+            <div class="icon">
+              <div class="cart_icon">
+                <i class="fa-brands fa-shopify"></i>
+                <p>장바구니</p>
+              </div>
+              <div class="icon_arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="cart_icon">
+                <i class="fa-regular fa-credit-card"></i>
+                <p>주문/결제</p>
+              </div>
+              <div class="icon_arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="cart_icon">
+                <i class="fa-solid fa-truck"></i>
+                <p>결제완료</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inner">
+        <form method="get" class="phone_box">
+          <!-- <div class="title">
+            <h1>결제하기</h1>
+          </div> -->
+          <div class="contaniner_inner">
+            <div class="input_container">
+              <div class="main_container">
+                <div class="main_container_text">
+                  <h2>주문/배송정보</h2>
+                </div>
+                <div class="main_container_name">
+                  <label for="name">
+                    <p>*</p>
+                    이름
+                  </label>
+                  <input type="text" name="name" id="name" />
+                  <div id="error_name" class="error"></div>
+                </div>
+              </div>
+              <div class="phone_container">
+                <div class="phone_boxs">
+                  <label for="phone1">
+                    <p>*</p>
+                    연락처</label
+                  >
+                  <input type="text" name="phoneNum" id="phoneNum" />
+                  <div id="error_phoneNum" class="error"></div>
+                </div>
+              </div>
+              <div class="email_container">
+                <label for="email">
+                  <p>*</p>
+                  이메일
+                </label>
+                <input type="text" name="email" id="email" />
+                <div id="error_email" class="error"></div>
+              </div>
+              <div class="delivery_container">
+                <span>배송지작성</span>
+                <div class="deliveryfirst">
+                  <label class="delivery" for="delivery">
+                    <p>*</p>
+                    받으실분
+                  </label>
+                  <input
+                    type="text"
+                    name="delivery"
+                    id="delivery"
+                    placeholder="최대 10자까지 입력 가능"
+                  />
+                  <div id="error_delivey" class="error"></div>
+                  <div class="delivery_checkbox">
+                    <input
+                      type="checkbox"
+                      name="deliverybox"
+                      id="deliverybox"
+                    />
+                    <label class="deliverybox" for="deliverybox">
+                      주문자 정보와 동일
+                    </label>
+                  </div>
+                  <div class="delivery_address">
+                    <div class="delivery_address_boxs">
+                      <div class="delivery_address_first">
+                        <div class="delivery_address_text">
+                          <p>*</p>
+                          <p>주소</p>
+                        </div>
+                        <div class="delivery_address_firstboxs">
+                          <div class="delivery_address_firstbox">
+                            <input disabled type="text" id="address" />
+                            <div id="error_address" class="error"></div>
+                          </div>
+                          <div class="delivery_clickbox">
+                            <input
+                              type="button"
+                              onclick="sample6_execDaumPostcode()"
+                              id="button"
+                              value="우편번호"
+                            />
+                            <buttom>CU 편의점 찾기</buttom>
+                            <buttom>GS 편의점 찾기</buttom>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="delivery_check_second_box">
+                        <input type="text" name="second" id="second" />
+                        <input type="text" name="third" id="third" />
+                      </div>
+                      <div class="military_delivery">
+                        <p>군부대 배송안내</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="delivery_phone">
+                    <div class="delivery_phone_box">
+                      <label class="deliveryphone" for="deliveryphone">
+                        <p>*</p>
+                        휴대폰번호
+                      </label>
+                      <input type="text" name="phoneNums" id="phoneNums" />
+                      <div id="error_phoneNums" class="error"></div>
+                    </div>
+                    <div class="delivery_service">
+                      <div class="delivery_service_box">
+                        <input
+                          type="checkbox"
+                          name="deliverycheck"
+                          id="deliverycheck"
+                        />
+                        <label for="deliverycheck">
+                          안심번호 서비스 사용
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="delivery_request_container">
+                <div class="delivery_request_inner">
+                  <label class="deliveryrequest" for="deliveryrequest">
+                    배송 요청사항
+                  </label>
+                  <select name="deliveryrequest" id="deliveryrequest">
+                    <option disabled selected value="">
+                      배송메시지를 입력해주세요.
+                    </option>
+                    <option value="">그냥 문 앞에 놓아 주시면 돼요.</option>
+                    <option value="">직접 받을게요.(부재 시 문앞)</option>
+                    <option value="">벨을 누르지 말아주세요.</option>
+                    <option value="">
+                      도착 후 전화주시면 직접 받으러 갈게요.
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="item_container">
+                <div class="item_text">
+                  <h2>주문 상품 정보</h2>
+                </div>
+                <div class="item_inner_boxs"></div>
+              </div>
+              <div class="pay_container">
+                <div class="pay_text">
+                  <p>결제수단 선택</p>
+                </div>
+                <div class="pay_inner">
+                  <div class="pay_btns">
+                    <div class="pay_btn">
+                      <div class="btn_p">
+                        <input checked type="radio" name="btn" id="btn" />
+                        <p>신용카드결제</p>
+                      </div>
+                      <div class="btn_p">
+                        <input type="radio" name="btn" id="btn" />
+                        <p>PAYCO</p>
+                      </div>
+                      <div class="btn_p">
+                        <input type="radio" name="btn" id="btn" />
+                        <p>카카오페이</p>
+                      </div>
+                      <div class="btn_p">
+                        <input type="radio" name="btn" id="btn" />
+                        <p>네이버페이</p>
+                      </div>
+                    </div>
+                    <div class="pay_btn2">
+                      <div class="btn_p">
+                        <input type="radio" name="btn" id="btn" />
+                        <p>휴대폰 결제</p>
+                      </div>
+                      <div class="btn_p">
+                        <input type="radio" name="btn" id="btn" />
+                        <p>계좌이체</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pay_text_sale">
+                    <p>무이자 할부 안내</p>
+                  </div>
+                </div>
+              </div>
+              <div class="manual_container">
+                <div class="manual_text">
+                  <p>
+                    저희쇼핑몰은 고객의 안전한 거래를 위해 무통장입금/계좌이체
+                    거래에 대해 구매 안전서비스를 적용하고 있습니다.
+                  </p>
+                  <buttom>하나은행 구매안전 서비스 가입확인</buttom>
+                </div>
+              </div>
+            </div>
+            <div class="pay_box_container">
+              <div class="pay_box_inner">
+                <h1>결제 예정 금액</h1>
+                <div class="pay_box_text">
+                  <ul>
+                    <li>
+                      <h3>주문금액</h3>
+                      <p class="orderpirce">0원</p>
+                    </li>
+                    <li>
+                      <h3>할인/차감 금액</h3>
+                      <p class="salepirce">-0원</p>
+                    </li>
+                    <li>
+                      <h3>배송비</h3>
+                      <p class="deliverypirce">무료</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pay_secode_box">
+                  <p>최종 결제 금액</p>
+                  <p class="finalpirce">0원</p>
+                </div>
+                <div class="pay_thrd_box">
+                  <label for="pay"> (필수) 모두 동의합니다. </label>
+                  <input type="checkbox" name="pay" id="pay" />
+                </div>
+                <div class="pay_thrd_box_text">
+                  <p>주문 상품정보 및 결제 대행 서비스</p>
+                  <p>약관에 모두 동의합니다.</p>
+                </div>
+                <div id="error_pay" class="error"></div>
+                <div class="pay_forn_box">
+                  <label for="pay2"> 배송지와 결제 정보를 저장하기</label>
+                  <input type="checkbox" name="pay2" id="pay2" />
+                </div>
+                <div class="div">
+                  <button>결제하기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <div class="sidebar_common"></div>
+    <footer></footer>
+  </body>
+</html>

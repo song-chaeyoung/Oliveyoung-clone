@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="user-scalable=1.0 width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
+    />
+    <meta property="og:image" content="/indeximg/logo_s.svg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:title" content="올리브영 온라인몰" />
+    <meta
+      property="og:description"
+      content="어디가? 올리브영! 뭐해? 올리브영! 전국매장과 온라인앱으로 가고 켜고, 주문하면 3시간 내 배송되는 오늘드림까지. 언제 어디서나 편리한 뷰티&헬스, 라이프스타일 쇼핑을 즐기는 곳, 올리브영"
+    />
+    <title>올리브영 | 장바구니</title>
+    <link rel="shortcut icon" href="/indeximg/logo_s.svg" type="image/x-icon" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/580465cdf5.js"
+      crossorigin="anonymosus"
+    ></script>
+    <!--custom css & js-->
+    <link rel="stylesheet" href="./cart.css" />
+    <script defer src="./cart.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header></header>
+    <main>
+      <!-- titl -->
+      <div class="title">
+        <div class="inner">
+          <div class="cart_container">
+            <div class="cart_text"><h1>장바구니</h1></div>
+            <div class="icon">
+              <div class="cart_icon active">
+                <i class="fa-brands fa-shopify"></i>
+                <p>장바구니</p>
+              </div>
+              <div class="icon_arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="cart_icon">
+                <i class="fa-regular fa-credit-card"></i>
+                <p>주문/결제</p>
+              </div>
+              <div class="icon_arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="cart_icon">
+                <i class="fa-solid fa-truck"></i>
+                <p>결제완료</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- tab -->
+      <div class="inner">
+        <ul class="tabs">
+          <li class="tab1 active">
+            <div for="tab-1">일반배송</div>
+          </li>
+          <li class="tab2">
+            <div for="tab-2">오늘드림</div>
+          </li>
+        </ul>
+        <div class="list_text totalcheck only_pc">
+          <div class="totalcheck_left">
+            <input type="checkbox" id="check7" />
+            <label for="check7"><i class="fa-solid fa-check"></i></label>
+            <p>올리브영 배송상품</p>
+          </div>
+          <div class="totalcheck_right">
+            <input type="button" value="전체삭제" />
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="list_text only_mobile">
+          <input type="checkbox" id="check9" />
+          <!-- <input type="button" value="전체삭제" /> -->
+          <label for="check9"> <i class="fa-solid fa-check"> </i> </label>
+          <p>올리브영 배송상품</p>
+          <i class="fa-solid fa-angle-right"></i>
+          <p>전체삭제</p>
+        </div>
+        <!-- mobile -->
+        <!-- <div class="check_box only_mobile">
+          <input type="checkbox" id="check8" />
+          <label for="check8"> <i class="fa-solid fa-check"></i></label>
+          <p>일반배송</p>
+        </div> -->
+        <div class="contents">
+          <div class="bar only_mobile">
+            <p>4만원 이상 무료배송</p>
+          </div>
+          <div class="pay_sticky_container only_mobile">
+            <div class="pay_sticky_text only_mobile">
+              <p>총 n건</p>
+              <p>0원</p>
+              <p>배송비 0원</p>
+            </div>
+            <div class="pay_sticky_button only_mobile">
+              <button>선택구매</button>
+              <button>전체구매</button>
+            </div>
+          </div>
+          <div class="content1 active">
+            <div class="inner">
+              <div class="content cart_content">
+                <!-- list -->
+                <div class="list_container">
+                  <div class="list_one"></div>
+                </div>
+                <!-- moblie pay -->
+                <div class="mobile_pay_inner only_mobile">
+                  <div class="moblie_pay only_mobile">
+                    <div class="moblie_pay_text only_mobile">
+                      <p>총 상품금액</p>
+                      <p>0원</p>
+                    </div>
+                    <div class="moblie_pay_text_two only_mobile">
+                      <p>총 할인 금액</p>
+                      <p>0원</p>
+                    </div>
+                    <div class="moblie_pay_text_three only_mobile">
+                      <p>총 배송비</p>
+                      <p>0원</p>
+                    </div>
+                    <div class="moblie_pay_text_four only_mobile">
+                      <p>최종 결제금액</p>
+                      <p>0원</p>
+                    </div>
+                    <div class="warning only_mobile">
+                      <div class="warning_inner">
+                        <div class="warning_icon">
+                          <i class="fa-solid fa-circle-exclamation"></i>
+                        </div>
+                        <div class="warning_text">
+                          쿠폰적응 및 결제 수단에 따라 최종 금액이 변경될 수
+                          있습니다.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- pay page -->
+                <div class="pay_page only_pc">
+                  <div class="inner">
+                    <div class="pay_first_text">
+                      <div class="frist_box">
+                        <p>현재 회원님께서는</p>
+                        <div class="box">
+                          <span>B</span>
+                          <span>BABY OLIVE</span>
+                          <span>입니다.</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pay_second_txt">
+                      <div class="one_box">
+                        <div class="text_box">
+                          <p>상품 결제정보</p>
+                          <p>0</p>
+                          <p>개</p>
+                        </div>
+                      </div>
+                      <div class="two_box">
+                        <div class="pay_number_box">
+                          <div class="pay_box">
+                            <div class="pay_one">
+                              <p>주문금액</p>
+                              <p>0원</p>
+                            </div>
+                            <div class="pay_two">
+                              <p>배송비</p>
+                              <p>0원</p>
+                            </div>
+                            <div class="pay_three">
+                              <p>할인금액</p>
+                              <p>0원</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pay_thrid_text">
+                      <div class="thrid_text_box">
+                        <p>결제 예정 금액</p>
+                        <p>0원</p>
+                      </div>
+                    </div>
+                    <div class="paybtn only_pc">
+                      <button class="allpay">전체구매</button>
+                      <button class="selectpay">선택구매</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content_empty_container empty">
+              <div class="content_empty">
+                <i class="fa-solid fa-cart-plus"></i>
+                <p>장바구니에 담겨있는 상품이 없습니다.</p>
+              </div>
+            </div>
+          </div>
+          <div class="content2">
+            <div class="content2_empty_container">
+              <div class="content_empty">
+                <i class="fa-solid fa-cart-plus"></i>
+                <p>장바구니에 담겨있는 상품이 없습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="introduction">
+          <div class="inner">
+            <div class="introduction_text">
+              <p>함께 구매하면 좋은 추천 상품이에요</p>
+              <p class="plus only_mobile">
+                더보기 <i class="fa-solid fa-chevron-right"></i>
+              </p>
+            </div>
+            <div class="introduction_contents">
+              <div class="introduction_container">
+                <div class="introduction_box"></div>
+                <div class="introduction_box"></div>
+                <div class="introduction_box"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="sidebar_common"></div>
+    <footer></footer>
+  </body>
+</html>

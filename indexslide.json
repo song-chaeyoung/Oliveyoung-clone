@@ -1,0 +1,168 @@
+{
+  "mainsilde": [
+    {
+      "id": 1,
+      "subdessc": "선물하기",
+      "title": "찜통 더위 </br> 함께 이겨낼 </br> 서머 기프트",
+      "description": "플러스로 만나요",
+      "img": "./indeximg/mainslide01.jpg"
+    },
+    {
+      "id": 2,
+      "subdessc": "클린뷰티",
+      "title": "내 피부와 </br> 지구를 지키는 </br> 다정력 탐구생활 ",
+      "description": "클린뷰티 최대 45% 할인",
+      "img": "./indeximg/mainslide02.jpg"
+    },
+    {
+      "id": 3,
+      "subdessc": "헬스+",
+      "title": "열대야도 </br> 이겨내는 </br> 헬스템 찾아요",
+      "description": "헬스+ 전용 10% 장바구니 쿠폰",
+      "img": "./indeximg/mainslide03.jpg"
+    },
+    {
+      "id": 4,
+      "subdessc": "올영PICK",
+      "title": "올리브영이 </br> PICK한 </br> 이 달의 브랜드",
+      "description": "BEST 아이템 특가",
+      "img": "./indeximg/mainslide04.jpg"
+    },
+    {
+      "id": 5,
+      "subdessc": "오프온",
+      "title": "뜨거운 트러블도 </br> 잠재우는 </br> 쿨링 바디 케어",
+      "description": "장바구니 쿠폰&증정 이벤트",
+      "img": "./indeximg/mainslide05.jpg"
+    },
+    {
+      "id": 6,
+      "subdessc": "어뮤즈",
+      "title": "투명한 색감에 </br> 귀여움까지 </br> 한 스푼",
+      "description": "키티 콜라보 기획 세트",
+      "img": "./indeximg/mainslide06.jpg"
+    },
+    {
+      "id": 7,
+      "subdessc": "필리밀리",
+      "title": "브러시만 바꿔도 </br> 달라지는 </br> 피부 표현",
+      "description": "브러시 SET전용 파우치 증정",
+      "img": "./indeximg/mainslide07.jpg"
+    },
+    {
+      "id": 8,
+      "subdessc": "비플레인",
+      "title": "조구만 모공 속 </br> 피지까지 </br> 깨끗하게 지워요",
+      "description": "조구만 에디션 더블 기획",
+      "img": "./indeximg/mainslide08.jpg"
+    },
+    {
+      "id": 9,
+      "subdessc": "에스트라",
+      "title": "민감 피부 위해 </br> 장벽케어까지 </br> 더했어요",
+      "description": "포차코 파우치 증정 이벤트",
+      "img": "./indeximg/mainslide09.jpg"
+    },
+    {
+      "id": 10,
+      "subdessc": "에뛰드",
+      "title": "무너짐 없는 </br> 픽싱력이 </br> 필요한 순간",
+      "description": "단독특가, 쿠폰 증정",
+      "img": "./indeximg/mainslide10.jpg"
+    }
+  ],
+  "update": [
+    {
+      "title": "나에게 필요한 컬러만 PICK!",
+      "desc": "나만의 톤온톤 인생 팔레트 완성",
+      "img": "./indeximg/update01.jpg"
+    },
+    {
+      "title": "소나무 코팩으로 매끈&맑은 모공 완성",
+      "desc": "블랙헤드 제거부터 모공 수렴까지!",
+      "img": "./indeximg/update02.jpg"
+    },
+    {
+      "title": "강민경 붓기 케어 비결",
+      "desc": "바디 순환 셀룰라이트 마사지 크림",
+      "img": "./indeximg/update03.jpg"
+    },
+    {
+      "title": "어디든지 붙이기 좋은 워터스티커",
+      "desc": "귀여운 에너지를 주는 커스텀 아이템 만들기",
+      "img": "./indeximg/update04.jpg"
+    },
+    {
+      "title": "탱글 쫀-쫀 반투명 광채 스틱",
+      "desc": "원하는 곳 어디든 생기를 부여하는 멀티 스틱",
+      "img": "./indeximg/update05.jpg"
+    },
+    {
+      "title": "콘시리얼맛 단백질 쉐이크 런칭",
+      "desc": "물만 넣어도 맛있는 플라이밀",
+      "img": "./indeximg/update06.jpg"
+    }
+  ],
+  "brand": [
+    {
+      "id": 0,
+      "brandname": "클리오",
+      "likenum": "21,398",
+      "img": "./indeximg/brandimg0.jpg"
+    },
+    {
+      "id": 1,
+      "brandname": "어반디케이",
+      "likenum": "4,337",
+      "img": "./indeximg/brandimg1.jpg"
+    },
+    {
+      "id": 2,
+      "brandname": "코링코",
+      "likenum": "799",
+      "img": "./indeximg/brandimg2.jpg"
+    },
+    {
+      "id": 3,
+      "brandname": "오프라 코스메틱",
+      "likenum": "191",
+      "img": "./indeximg/brandimg3.jpg"
+    },
+    {
+      "id": 4,
+      "brandname": "코스노리",
+      "likenum": "5,188",
+      "img": "./indeximg/brandimg4.jpg"
+    },
+    {
+      "id": 5,
+      "brandname": "이지듀",
+      "likenum": "515",
+      "img": "./indeximg/brandimg5.jpg"
+    },
+    {
+      "id": 6,
+      "brandname": "닥터지",
+      "likenum": "19,982",
+      "img": "./indeximg/brandimg6.jpg"
+    },
+    {
+      "id": 7,
+      "brandname": "유이크",
+      "likenum": "164",
+      "img": "./indeximg/brandimg7.jpg"
+    },
+    {
+      "id": 8,
+      "brandname": "아누아",
+      "likenum": "9,597",
+      "img": "./indeximg/brandimg8.jpg"
+    },
+    {
+      "id": 9,
+      "brandname": "토리든",
+      "likenum": "14,293",
+      "img": "./indeximg/brandimg9.jpg"
+    }
+  ]
+}

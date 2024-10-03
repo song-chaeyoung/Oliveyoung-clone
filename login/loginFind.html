@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="/indeximg/logo_s.svg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:title" content="올리브영 온라인몰" />
+    <meta
+      property="og:description"
+      content="어디가? 올리브영! 뭐해? 올리브영! 전국매장과 온라인앱으로 가고 켜고, 주문하면 3시간 내 배송되는 오늘드림까지. 언제 어디서나 편리한 뷰티&헬스, 라이프스타일 쇼핑을 즐기는 곳, 올리브영"
+    />
+    <title>아이디찾기 | 올리브영</title>
+    <link
+      rel="shortcut icon"
+      href="/indeximg/logo_s.svg"
+      type="image/x-icon"
+    />
+    <!-- fontawsome -->
+    <script
+    src="https://kit.fontawesome.com/580465cdf5.js"crossorigin="anonymous"></script>
+    <!--custom css & js-->
+    <script defer src="./loginFind.js"></script>
+    <link rel="stylesheet" href="./loginFind.css">
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="inner">
+        <div class="loginText">
+          <h2>아이디 찾기</h2>
+        </div>
+        <!--tab 부분-->
+        <ul class="tabs">
+          <li class="tab1 active">
+            <div for="tab-1">휴대폰 인증</div>
+          </li>
+          <li class="tab2">
+            <div for="tab-2">이메일 인증</div>
+          </li>
+        </ul>
+        <!--ID & PW 입력부분-->
+        <div class="contents">
+          <div class="content1 active">
+        <div class="userMember">
+              <div class="memberId">
+                <input id="inputId" placeholder="이름을 입력해주세요." type="text"></input>
+            </div>
+            <div class="memberPw">
+                <input id="inputPw" placeholder="휴대폰번호를 입력해주세요.( -를 제외한 숫자입력)" type="text"></input>
+            </div>
+        </div>
+              <div class="loginBtn">
+                <div class="loginBtn01">
+                    <button>확인</button>
+                </div>
+
+            </div>
+          </div>
+          <!--비회원 주문조회-->
+          <div class="content2">
+            <div class="orderMember">
+              <div class="memberId">
+                <input 
+                id="inputId" 
+                placeholder="이름을 입력해주세요." 
+                type="text">
+              </input>
+            </div>
+            <div class="memberPw">
+                <input 
+                id="inputPw" 
+                placeholder="이메일을 입력해주세요." 
+                type="email">
+              </input>
+            </div>
+            </div>
+            <div class="nomemberBtn">
+              <div class="orderbtn">
+                  <button>
+                    확인
+                  </button>
+              </div>
+            </div>              
+          </div>
+        </div>
+      </div>
+    </main>   
+    <div class="sidebar_common"></div>
+    <!--footer-->
+    <footer></footer>
+  </body>
+</html>

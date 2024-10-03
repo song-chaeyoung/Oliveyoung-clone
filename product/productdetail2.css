@@ -1,0 +1,94 @@
+@import url("/common.css");
+
+.item_info_container {
+  .inner {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 100px 0;
+    .item_info_left {
+      /* flex: 1; */
+      img {
+        width: 400px;
+      }
+    }
+    .item_info_right {
+      /* flex: 2; */
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .item_info_righttop {
+        h4 {
+          font-size: 32px;
+          font-weight: 400;
+          margin-bottom: 23px;
+        }
+        .item_info_desc {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .item_info_desc_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            > div {
+              height: fit-content;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              &.item_info_desc_price {
+                p:nth-child(1) {
+                  font-size: 24px;
+                  font-weight: 700;
+                }
+                p:nth-child(2) {
+                  color: var(--main-price-red);
+                  font-size: 16px;
+                }
+                p:nth-child(3) {
+                  font-size: 14px;
+                  text-decoration: line-through;
+                }
+              }
+              &.item_info_desc_review {
+                font-size: 12px;
+                font-weight: 500;
+                p:nth-child(2) {
+                  text-decoration: underline;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+          .item_info_desc_ai {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            p:nth-child(1) {
+              color: #999;
+            }
+            p:nth-child(3) {
+              font-size: 13px;
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .item_info_rightmid {
+        padding: 20px 0;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        font-size: 14px;
+        > p {
+          font-weight: 700;
+        }
+        .delivery_noraml {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
